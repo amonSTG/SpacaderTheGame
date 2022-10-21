@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.games.spacaderthegame.SceneController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0">
+         <image>
+            <Image url="@Ckb7vAh.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="370.0" layoutY="192.0" text="Spacader - New Adventure" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Droid Sans Mono" size="24.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Button layoutX="463.0" layoutY="310.0" mnemonicParsing="false" onAction="#switchToSceneChooseFighter" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-text-fill: white; -fx-border-color: white;" text="Start" textAlignment="CENTER">
+         <effect>
+            <Glow />
+         </effect></Button>
+   </children>
+</AnchorPane>
