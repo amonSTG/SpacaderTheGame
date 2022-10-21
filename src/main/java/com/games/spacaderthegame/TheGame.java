@@ -81,7 +81,7 @@ public class TheGame extends Application implements Parameters {
 
         score = 0;
         IntStream.range(0, MAX_BOSSES).mapToObj(i -> this.newBoss()).forEach(bosses::add);
-        IntStream.range(0, MAX_BOMBS).mapToObj(i -> this.newEnemy()).forEach(enemies::add);
+        IntStream.range(0, MAX_ENEMIES).mapToObj(i -> this.newEnemy()).forEach(enemies::add);
     }
 
     //run Graphics
@@ -182,7 +182,7 @@ public class TheGame extends Application implements Parameters {
 
 
     Enemy newEnemy() {
-        return new Enemy(50 + RAND.nextInt(WIDTH - 200), 0, PLAYER_SIZE / 2, BOMBS_IMG[RAND.nextInt(BOMBS_IMG.length)]);
+        return new Enemy(50 + RAND.nextInt(WIDTH - 200), 0, PLAYER_SIZE / 2, ENEMIES_IMG[RAND.nextInt(ENEMIES_IMG.length)]);
     }
 
     Boss newBoss() {

@@ -22,7 +22,7 @@ public interface Parameters {
     static final int EXPLOSION_H = 128;
     static final int EXPLOSION_STEPS = 15;
 
-    static final Image BOMBS_IMG[] = {
+    static final Image ENEMIES_IMG[] = {
             new Image("file: src/main/resources/com/games/spacaderthegame/images/enemy_final_animated.gif"),
             new Image("file:src/main/resources/com/games/spacaderthegame/images/enemy_final_animated.gif"),
             new Image("file:src/main/resources/com/games/spacaderthegame/images/enemy_final_animated.gif"),
@@ -41,7 +41,7 @@ public interface Parameters {
     };
 
 
-    final int MAX_BOMBS = 10,  MAX_SHOTS = MAX_BOMBS * 2;
+    final int MAX_ENEMIES = 10,  MAX_SHOTS = MAX_ENEMIES * 2;
 
     final int MAX_BOSSES = 1, MAX_BOSS_SHOTS = MAX_BOSSES * 4;
 
